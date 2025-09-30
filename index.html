@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RedesCreation IT Services in Bengaluru - Cloud, Cybersecurity, Software Development, IT Consulting & Support.">
+  <meta name="keywords" content="IT Services, Cloud, Cybersecurity, Software Development, IT Consulting, Bengaluru">
+  <meta name="author" content="RedesCreation">
+  <title>RedesCreation IT Services | Bengaluru</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-10px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
+    }
+
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- ================================================= HEADER ================================================= -->
+  <header class="w-full fixed top-0 bg-white shadow z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="https://img.icons8.com/clouds/100/000000/cloud.png" alt="Logo" class="w-10 h-10">
+        <span class="font-bold text-xl">RedesCreation</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 font-semibold">
+        <a href="index.html" class="hover:text-blue-500">Home</a>
+        <a href="services.html" class="hover:text-blue-500">Services</a>
+        <a href="about.html" class="hover:text-blue-500">About</a>
+        <a href="case-studies.html" class="hover:text-blue-500">Projects</a>
+        <a href="blog.html" class="hover:text-blue-500">Blog</a>
+        <a href="contact.html" class="hover:text-blue-500">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="contact.html" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Get a Quote</a>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">&#9776;</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu hidden flex flex-col space-y-4 bg-gray-100 px-6 py-6 md:hidden">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="services.html" class="hover:text-blue-600">Services</a>
+      <a href="about.html" class="hover:text-blue-600">About</a>
+      <a href="case-studies.html" class="hover:text-blue-600">Projects</a>
+      <a href="blog.html" class="hover:text-blue-600">Blog</a>
+      <a href="contact.html" class="hover:text-blue-600">Contact</a>
+    </div>
+  </header>
+
+  <!-- ================================================= HERO ================================================= -->
+  <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center"
+    style="background-image: url('https://abraogroup.com/wp-content/uploads/2021/04/IT-SERVICES-1st-Image-1.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 text-center text-white px-6" data-aos="fade-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Smart IT Solutions for a Connected Future</h1>
+      <p class="text-lg md:text-xl mb-6">We empower businesses with cutting-edge technology and 24/7 IT support.</p>
+      <div class="space-x-4">
+        <a href="#services" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-semibold">Get Started</a>
+        <a href="#about" class="underline">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================= SERVICES ================================================= -->
+  <section id="services" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-down">Our IT Services</h2>
+      <p class="mb-12 text-gray-600">From startups to enterprises, we deliver tailored IT solutions to help you grow.</p>
+
+      <!-- Services Grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in">
+          <img src="https://img.icons8.com/color/96/000000/cloud.png" class="w-16 mx-auto mb-4 float-animation" alt="Cloud">
+          <h3 class="font-bold text-xl mb-2">Cloud Solutions</h3>
+          <p class="text-gray-600">Secure cloud migration and management services tailored for your business.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://img.icons8.com/color/96/000000/security-checked.png" class="w-16 mx-auto mb-4 float-animation" alt="Security">
+          <h3 class="font-bold text-xl mb-2">Cybersecurity</h3>
+          <p class="text-gray-600">Protect your digital assets with advanced security monitoring and tools.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://img.icons8.com/color/96/000000/source-code.png" class="w-16 mx-auto mb-4 float-animation" alt="Code">
+          <h3 class="font-bold text-xl mb-2">Software Development</h3>
+          <p class="text-gray-600">Custom-built scalable software and apps to fit your business needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================= ABOUT ================================================= -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <!-- Image -->
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" alt="About Us" class="rounded-xl shadow-lg" data-aos="fade-right">
+
+      <!-- Content -->
+      <div data-aos="fade-left">
+        <h2 class="text-3xl font-bold mb-4">About RedesCreation</h2>
+        <p class="text-gray-600 mb-6">Founded in Bengaluru, RedesCreation provides innovative IT services that merge creativity with cutting-edge technology. Our mission is to empower businesses through scalable and secure IT solutions.</p>
+        <ul class="space-y-3 text-gray-700">
+          <li>✔ Cloud & Cybersecurity Experts</li>
+          <li>✔ 24/7 IT Support & Monitoring</li>
+          <li>✔ 100+ Successful Projects Delivered</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================= PORTFOLIO ================================================= -->
+  <section id="portfolio" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-down">Our Projects</h2>
+      <p class="mb-12 text-gray-600">Explore some of the successful IT projects we’ve delivered.</p>
+
+      <!-- Portfolio Grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="relative group" data-aos="zoom-in">
+          <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=900&q=80" class="rounded-lg shadow" alt="Project 1">
+          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center rounded-lg">
+            <p class="text-white font-bold text-lg">Cloud Migration</p>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="relative group" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=900&q=80" class="rounded-lg shadow" alt="Project 2">
+          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center rounded-lg">
+            <p class="text-white font-bold text-lg">Security Upgrade</p>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="relative group" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=900&q=80" class="rounded-lg shadow" alt="Project 3">
+          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center rounded-lg">
+            <p class="text-white font-bold text-lg">App Development</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================= TESTIMONIALS ================================================= -->
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-down">What Our Clients Say</h2>
+      <p class="mb-12 text-gray-600">Trusted by businesses across industries.</p>
+
+      <!-- Testimonials Grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-xl shadow" data-aos="fade-up">
+          <p class="text-gray-600 mb-4">“RedesCreation transformed our IT infrastructure. Excellent support and innovative solutions!”</p>
+          <h4 class="font-bold">Rahul Sharma</h4>
+          <p class="text-sm text-gray-500">CEO, TechNova</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="100">
+          <p class="text-gray-600 mb-4">“Their cybersecurity team helped us secure sensitive data and stay compliant.”</p>
+          <h4 class="font-bold">Priya Menon</h4>
+          <p class="text-sm text-gray-500">CTO, FinEdge</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="200">
+          <p class="text-gray-600 mb-4">“Top-notch app development services with smooth delivery. Highly recommended.”</p>
+          <h4 class="font-bold">Arjun Verma</h4>
+          <p class="text-sm text-gray-500">Founder, StartX</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================= PRICING ================================================= -->
+  <section id="pricing" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-down">Pricing Plans</h2>
+      <p class="mb-12 text-gray-600">Choose a plan that fits your needs.</p>
+
+      <!-- Pricing Grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Starter -->
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up">
+          <h3 class="text-xl font-bold mb-4">Starter</h3>
+          <p class="text-3xl font-bold mb-4">₹9,999<span class="text-sm">/mo</span></p>
+          <ul class="space-y-3 text-gray-600 mb-6">
+            <li>✔ Cloud Setup</li>
+            <li>✔ Basic Security</li>
+            <li>✔ Email Support</li>
+          </ul>
+          <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Choose Plan</a>
+        </div>
+        <!-- Business -->
+        <div class="bg-blue-600 text-white p-8 rounded-xl shadow hover:shadow-lg transition transform scale-105" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-bold mb-4">Business</h3>
+          <p class="text-3xl font-bold mb-4">₹19,999<span class="text-sm">/mo</span></p>
+          <ul class="space-y-3 mb-6">
+            <li>✔ Cloud + Security</li>
+            <li>✔ 24/7 Monitoring</li>
+            <li>✔ Phone Support</li>
+          </ul>
+          <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-gray-200">Choose Plan</a>
+        </div>
+        <!-- Enterprise -->
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-bold mb-4">Enterprise</h3>
+          <p class="text-3xl font-bold mb-4">₹49,999<span class="text-sm">/mo</span></p>
+          <ul class="space-y-3 text-gray-600 mb-6">
+            <li>✔ Full IT Suite</li>
+            <li>✔ Custom Development</li>
+            <li>✔ Dedicated Support</li>
+          </ul>
+          <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Choose Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================= BLOG ================================================= -->
+  <section id="blog" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-down">Latest Articles</h2>
+      <p class="mb-12 text-gray-600">Insights on IT, security, and digital transformation.</p>
+
+      <!-- Blog Grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden" data-aos="fade-up">
+          <img src="https://abraogroup.com/wp-content/uploads/2021/04/IT-SERVICES-1st-Image-1.jpg" alt="Blog 1" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="font-bold text-lg mb-2">5 Cloud Trends in 2025</h3>
+            <p class="text-gray-600 mb-4">The future of cloud computing and what businesses should expect.</p>
+            <a href="#" class="text-blue-600 font-semibold">Read More →</a>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80" alt="Blog 2" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="font-bold text-lg mb-2">Cybersecurity Best Practices</h3>
+            <p class="text-gray-600 mb-4">Learn how to secure your business against evolving threats.</p>
+            <a href="#" class="text-blue-600 font-semibold">Read More →</a>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=900&q=80" alt="Blog 3" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="font-bold text-lg mb-2">AI in Business</h3>
+            <p class="text-gray-600 mb-4">How artificial intelligence is reshaping industries in 2025.</p>
+            <a href="#" class="text-blue-600 font-semibold">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================= FAQ ================================================= -->
+  <section id="faq" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-6" data-aos="fade-down">Frequently Asked Questions</h2>
+      <p class="mb-12 text-center text-gray-600">Answers to common questions about our IT services.</p>
+
+      <!-- FAQ Accordion -->
+      <div class="space-y-4">
+        <div class="bg-white shadow rounded-lg" data-aos="fade-up">
+          <button class="faq-question w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
+            Do you offer 24/7 IT support?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-gray-600">Yes, we provide round-the-clock support and monitoring for all clients.</div>
+        </div>
+        <div class="bg-white shadow rounded-lg" data-aos="fade-up" data-aos-delay="100">
+          <button class="faq-question w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
+            How secure is your cloud hosting?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-gray-600">Our cloud hosting includes end-to-end encryption, firewalls, and compliance with top security standards.</div>
+        </div>
+        <div class="bg-white shadow rounded-lg" data-aos="fade-up" data-aos-delay="200">
+          <button class="faq-question w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
+            Can you build custom apps?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-gray-600">Absolutely! We specialize in developing scalable apps tailored to your needs.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================= CONTACT ================================================= -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <!-- Form -->
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full border p-3 rounded-lg">
+          <input type="email" placeholder="Your Email" class="w-full border p-3 rounded-lg">
+          <input type="text" placeholder="Your Phone" class="w-full border p-3 rounded-lg">
+          <textarea placeholder="Your Message" class="w-full border p-3 rounded-lg"></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div data-aos="fade-left">
+        <h3 class="text-xl font-bold mb-4">Contact Details</h3>
+        <p class="mb-2"><i class="fa-solid fa-phone"></i> +91 96766 59153</p>
+        <p class="mb-2"><i class="fa-solid fa-envelope"></i>info@redescreation.in</p>
+        <p class="mb-6"><i class="fa-solid fa-globe"></i> www.redescreation.in</p>
+        <iframe class="w-full h-64 rounded-lg shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0555991993056!2d77.594562!3d12.9715987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670e0d1c6d9%3A0x419f3c51a3e3d!2sBengaluru%2C%20India!5e0!3m2!1sen!2sin!4v1616581123456"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-white text-xl font-semibold mb-4">Redes Creation</h3>
+        <p>Providing IT services and solutions to help businesses succeed in the digital age.</p>
+      </div> 
+      <div>
+        <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="services.html" class="hover:underline">Services</a></li>
+          <li><a href="case-studies.html" class="hover:underline">Case Studies</a></li>
+          <li><a href="blog.html" class="hover:underline">Blog</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Contact Info</h4>
+        <p>Bengaluru, India</p>
+        <p>Phone: +91 96766 59153</p>
+        <p>Email: info@redescreation.in</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+        <div class="flex space-x-4">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-sm mt-8 text-gray-500">© 2025 Redes Creation. All Rights Reserved.</div>
+  </footer>
+
+  <!-- ================================================= SCRIPTS ================================================= -->
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        answer.classList.toggle('hidden');
+        icon.textContent = icon.textContent === '+' ? '-' : '+';
+      }); 
+    });
+  </script>
+</body>
+</html>

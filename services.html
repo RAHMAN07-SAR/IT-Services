@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ========================== META & TITLE ========================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RedesCreation IT Services - Explore our wide range of IT solutions." />
+  <title>Services - RedesCreation IT Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ========================== TAILWIND CDN ========================== -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ========================== GOOGLE FONTS ========================== -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ========================== AOS CSS ========================== -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .pricing-card:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- ================================================= HEADER ================================================= -->
+  <header class="w-full fixed top-0 bg-white shadow z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="https://img.icons8.com/clouds/100/000000/cloud.png" alt="Logo" class="w-10 h-10">
+        <span class="font-bold text-xl">RedesCreation</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 font-semibold">
+        <a href="index.html" class="hover:text-blue-500">Home</a>
+        <a href="services.html" class="hover:text-blue-500">Services</a>
+        <a href="about.html" class="hover:text-blue-500">About</a>
+        <a href="case-studies.html" class="hover:text-blue-500">Projects</a>
+        <a href="blog.html" class="hover:text-blue-500">Blog</a>
+        <a href="contact.html" class="hover:text-blue-500">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="contact.html" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Get a Quote</a>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">&#9776;</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu hidden flex flex-col space-y-4 bg-gray-100 px-6 py-6 md:hidden">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="services.html" class="hover:text-blue-600">Services</a>
+      <a href="about.html" class="hover:text-blue-600">About</a>
+      <a href="case-studies.html" class="hover:text-blue-600">Projects</a>
+      <a href="blog.html" class="hover:text-blue-600">Blog</a>
+      <a href="contact.html" class="hover:text-blue-600">Contact</a>
+    </div>
+  </header>
+  <!-- ========================== HERO SECTION ========================== -->
+  <section class="hero-bg h-96 flex flex-col justify-center items-center text-white relative mt-16">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 text-center" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+      <p class="text-lg">Comprehensive IT solutions tailored to your business</p>
+      <nav class="mt-4 text-sm">
+        <a href="index.html" class="hover:underline">Home</a> /
+        <span>Services</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ========================== SERVICES GRID ========================== -->
+  <section class="py-20 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-down">What We Offer</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/cloud.png" alt="Cloud Solutions" class="mx-auto mb-4" />
+        <h3 class="text-xl font-bold mb-2 text-center">Cloud Solutions</h3>
+        <p class="text-gray-600 text-center">Scalable, secure, and cost-effective cloud services to enhance flexibility and performance.</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://img.icons8.com/color/96/security-checked.png" alt="Cybersecurity" class="mx-auto mb-4" />
+        <h3 class="text-xl font-bold mb-2 text-center">Cybersecurity</h3>
+        <p class="text-gray-600 text-center">Protecting businesses with advanced threat detection, monitoring, and compliance services.</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://img.icons8.com/color/96/developer.png" alt="Software Development" class="mx-auto mb-4" />
+        <h3 class="text-xl font-bold mb-2 text-center">Software Development</h3>
+        <p class="text-gray-600 text-center">Custom web and mobile applications built with modern technologies to drive innovation.</p>
+      </div>
+      <!-- Service 4 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://img.icons8.com/color/96/consultation.png" alt="IT Consulting" class="mx-auto mb-4" />
+        <h3 class="text-xl font-bold mb-2 text-center">IT Consulting</h3>
+        <p class="text-gray-600 text-center">Expert guidance to optimize your IT strategy and align technology with business goals.</p>
+      </div>
+      <!-- Service 5 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://img.icons8.com/color/96/analytics.png" alt="Data Analytics" class="mx-auto mb-4" />
+        <h3 class="text-xl font-bold mb-2 text-center">Data Analytics</h3>
+        <p class="text-gray-600 text-center">Leverage big data and AI-powered analytics to make data-driven business decisions.</p>
+      </div>
+      <!-- Service 6 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="500">
+        <img src="https://img.icons8.com/color/96/network.png" alt="Network Solutions" class="mx-auto mb-4" />
+        <h3 class="text-xl font-bold mb-2 text-center">Network Solutions</h3>
+        <p class="text-gray-600 text-center">Robust, secure, and scalable networking solutions for seamless connectivity and growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== FEATURED SERVICE ========================== -->
+  <section class="py-20 bg-blue-600 text-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold mb-6">Featured: Cloud Solutions</h2>
+        <p class="mb-4">Our cloud services empower businesses to scale without limits. With top-tier security, flexibility, and support, our solutions are tailored to your growth journey.</p>
+        <a href="contact.html" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-gray-200 transition">Get Started</a>
+      </div>
+      <div data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Cloud Solutions" class="rounded-lg shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== PROCESS SECTION ========================== -->
+  <section class="py-20 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-down">How We Work</h2>
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div class="p-6 bg-white shadow rounded-lg" data-aos="zoom-in">
+        <img src="https://img.icons8.com/color/96/idea.png" alt="Discovery" class="mx-auto mb-4" />
+        <h3 class="font-bold">1. Discovery</h3>
+        <p>Understanding client needs and defining goals.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded-lg" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://img.icons8.com/color/96/design.png" alt="Planning" class="mx-auto mb-4" />
+        <h3 class="font-bold">2. Planning</h3>
+        <p>Creating a roadmap with clear timelines and milestones.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded-lg" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://img.icons8.com/color/96/source-code.png" alt="Execution" class="mx-auto mb-4" />
+        <h3 class="font-bold">3. Execution</h3>
+        <p>Agile development and deployment with feedback loops.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded-lg" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://img.icons8.com/color/96/checked-2.png" alt="Delivery" class="mx-auto mb-4" />
+        <h3 class="font-bold">4. Delivery</h3>
+        <p>On-time delivery with post-launch support and monitoring.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== PRICING PLANS ========================== -->
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-down">Pricing Plans</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Basic -->
+        <div class="bg-white rounded-lg shadow-lg p-8 pricing-card" data-aos="fade-up">
+          <h3 class="text-xl font-bold mb-4">Basic</h3>
+          <p class="text-gray-600 mb-6">For startups and small businesses</p>
+          <div class="text-4xl font-bold mb-6">$99<span class="text-lg font-normal">/mo</span></div>
+          <ul class="mb-6 space-y-2 text-gray-600">
+            <li>✔ 5 Projects</li>
+            <li>✔ Basic Support</li>
+            <li>✔ Cloud Hosting</li>
+          </ul>
+          <a href="contact.html" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Choose Plan</a>
+        </div>
+        <!-- Standard -->
+        <div class="bg-white rounded-lg shadow-lg p-8 border-2 border-blue-600 pricing-card" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-bold mb-4">Standard</h3>
+          <p class="text-gray-600 mb-6">Best for growing teams</p>
+          <div class="text-4xl font-bold mb-6">$199<span class="text-lg font-normal">/mo</span></div>
+          <ul class="mb-6 space-y-2 text-gray-600">
+            <li>✔ 15 Projects</li>
+            <li>✔ Priority Support</li>
+            <li>✔ Advanced Analytics</li>
+            <li>✔ Cloud Hosting</li>
+          </ul>
+          <a href="contact.html" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Choose Plan</a>
+        </div>
+        <!-- Premium -->
+        <div class="bg-white rounded-lg shadow-lg p-8 pricing-card" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-bold mb-4">Premium</h3>
+          <p class="text-gray-600 mb-6">For enterprises and large-scale needs</p>
+          <div class="text-4xl font-bold mb-6">$399<span class="text-lg font-normal">/mo</span></div>
+          <ul class="mb-6 space-y-2 text-gray-600">
+            <li>✔ Unlimited Projects</li>
+            <li>✔ 24/7 Support</li>
+            <li>✔ Advanced Security</li>
+            <li>✔ Dedicated Resources</li>
+          </ul>
+          <a href="contact.html" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Choose Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== CASE STUDIES ========================== -->
+  <section class="py-20 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-down">Case Studies</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="relative group overflow-hidden rounded-lg shadow-lg" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80" alt="Case Study" class="w-full h-64 object-cover group-hover:scale-110 transition" />
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">E-commerce App Development</div>
+      </div>
+      <div class="relative group overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Case Study" class="w-full h-64 object-cover group-hover:scale-110 transition" />
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">Cloud Migration Success</div>
+      </div>
+      <div class="relative group overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Case Study" class="w-full h-64 object-cover group-hover:scale-110 transition" />
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">AI-Powered Analytics</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== TESTIMONIALS ========================== -->
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-down">What Clients Say</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white shadow rounded-lg p-6" data-aos="fade-up">
+          <p class="mb-4">“RedesCreation modernized our IT infrastructure seamlessly. Highly recommend!”</p>
+          <div class="font-bold">Ravi Kumar</div>
+          <div class="text-sm text-gray-600">CTO, FinTechX</div>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6" data-aos="fade-up" data-aos-delay="100">
+          <p class="mb-4">“Their cybersecurity expertise saved us from a major breach.”</p>
+          <div class="font-bold">Anita Mehta</div>
+          <div class="text-sm text-gray-600">COO, HealthSecure</div>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6" data-aos="fade-up" data-aos-delay="200">
+          <p class="mb-4">“Outstanding cloud services — we scaled without downtime.”</p>
+          <div class="font-bold">Sanjay Singh</div>
+          <div class="text-sm text-gray-600">CEO, RetailPro</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== FAQ ========================== -->
+  <section class="py-20 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-down">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <div class="bg-white shadow rounded-lg">
+        <button class="faq-question w-full flex justify-between items-center p-4 text-left font-semibold">
+          What industries do you serve?
+          <span>+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-gray-600">We serve diverse industries including finance, healthcare, retail, and education.</div>
+      </div>
+      <div class="bg-white shadow rounded-lg">
+        <button class="faq-question w-full flex justify-between items-center p-4 text-left font-semibold">
+          Do you provide 24/7 support?
+          <span>+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-gray-600">Yes, our premium plans include round-the-clock support and monitoring.</div>
+      </div>
+      <div class="bg-white shadow rounded-lg">
+        <button class="faq-question w-full flex justify-between items-center p-4 text-left font-semibold">
+          Can you customize solutions?
+          <span>+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-gray-600">Absolutely! We tailor solutions based on your unique business requirements.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== CALL TO ACTION ========================== -->
+  <section class="py-20 bg-blue-600 text-white text-center">
+    <h2 class="text-3xl font-bold mb-6" data-aos="zoom-in">Ready to Transform Your Business?</h2>
+    <p class="mb-6">Let’s build innovative IT solutions together.</p>
+    <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-full hover:bg-gray-200 transition">Contact Us</a>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-white text-xl font-semibold mb-4">Redes Creation</h3>
+        <p>Providing IT services and solutions to help businesses succeed in the digital age.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="services.html" class="hover:underline">Services</a></li>
+          <li><a href="case-studies.html" class="hover:underline">Case Studies</a></li>
+          <li><a href="blog.html" class="hover:underline">Blog</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Contact Info</h4>
+        <p>Bengaluru, India</p>
+        <p>Phone: +91 96766 59153</p>
+        <p>Email: info@redescreation.in</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+        <div class="flex space-x-4">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-sm mt-8 text-gray-500">© 2025 Redes Creation. All Rights Reserved.</div>
+  </footer>
+
+  <!-- ========================== AOS & JS ========================== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Mobile Menu
+    document.getElementById("menu-btn").addEventListener("click", () => {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll(".faq-question").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const answer = btn.nextElementSibling;
+        answer.classList.toggle("hidden");
+        btn.querySelector("span").textContent = answer.classList.contains("hidden") ? "+" : "-";
+      }); 
+    });
+  </script>
+</body>
+</html>
